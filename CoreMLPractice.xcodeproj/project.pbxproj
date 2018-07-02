@@ -13,6 +13,7 @@
 		6B30784420CA574300D4F80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784320CA574300D4F80C /* Assets.xcassets */; };
 		6B30784720CA574300D4F80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784520CA574300D4F80C /* LaunchScreen.storyboard */; };
 		6B30785220CA574300D4F80C /* CoreMLPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B30785120CA574300D4F80C /* CoreMLPracticeTests.swift */; };
+		AAA6A7D120E9FD0200F47CB7 /* NASNetMobile.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AAA6A7D020E9FD0200F47CB7 /* NASNetMobile.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		6B30784D20CA574300D4F80C /* CoreMLPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B30785120CA574300D4F80C /* CoreMLPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLPracticeTests.swift; sourceTree = "<group>"; };
 		6B30785320CA574300D4F80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAA6A7D020E9FD0200F47CB7 /* NASNetMobile.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NASNetMobile.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		6B30783B20CA574200D4F80C /* CoreMLPractice */ = {
 			isa = PBXGroup;
 			children = (
+				AAA6A7C720E9E8B100F47CB7 /* MLModels */,
 				6B30783C20CA574200D4F80C /* AppDelegate.swift */,
 				6B30783E20CA574200D4F80C /* ViewController.swift */,
 				6B30784020CA574200D4F80C /* Main.storyboard */,
@@ -94,6 +97,14 @@
 				6B30785320CA574300D4F80C /* Info.plist */,
 			);
 			path = CoreMLPracticeTests;
+			sourceTree = "<group>";
+		};
+		AAA6A7C720E9E8B100F47CB7 /* MLModels */ = {
+			isa = PBXGroup;
+			children = (
+				AAA6A7D020E9FD0200F47CB7 /* NASNetMobile.mlmodel */,
+			);
+			path = MLModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B30783F20CA574200D4F80C /* ViewController.swift in Sources */,
+				AAA6A7D120E9FD0200F47CB7 /* NASNetMobile.mlmodel in Sources */,
 				6B30783D20CA574200D4F80C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
