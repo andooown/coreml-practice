@@ -14,9 +14,9 @@ struct MenuEntity {
     let className: String
 
     func viewController() -> UIViewController {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: self.className, bundle: nil)
 
-        let controller = storyboard.instantiateViewController(withIdentifier: self.className)
+        guard let controller = storyboard.instantiateInitialViewController() else { fatalError() }
         controller.title = self.title
 
         return controller

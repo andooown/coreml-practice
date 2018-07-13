@@ -19,6 +19,7 @@
 		6BF9B46820F88E91005317E7 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BF9B46620F88E91005317E7 /* MenuTableViewCell.xib */; };
 		6BF9B46B20F89696005317E7 /* MenusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9B46A20F89696005317E7 /* MenusModel.swift */; };
 		6BF9B46E20F89724005317E7 /* MenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9B46D20F89724005317E7 /* MenuEntity.swift */; };
+		6BF9B47020F8A8DC005317E7 /* Food101RecognitionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF9B46F20F8A8DC005317E7 /* Food101RecognitionViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		6BF9B46620F88E91005317E7 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		6BF9B46A20F89696005317E7 /* MenusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusModel.swift; sourceTree = "<group>"; };
 		6BF9B46D20F89724005317E7 /* MenuEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEntity.swift; sourceTree = "<group>"; };
+		6BF9B46F20F8A8DC005317E7 /* Food101RecognitionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food101RecognitionViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,6 @@
 				6BF9B46120F889F6005317E7 /* ViewControllers */,
 				AAA6A7C720E9E8B100F47CB7 /* MLModels */,
 				6B30783C20CA574200D4F80C /* AppDelegate.swift */,
-				6B30783E20CA574200D4F80C /* Food101RecognitionViewController.swift */,
 				6B30784020CA574200D4F80C /* Main.storyboard */,
 				6B30784320CA574300D4F80C /* Assets.xcassets */,
 				6B30784520CA574300D4F80C /* LaunchScreen.storyboard */,
@@ -116,6 +117,7 @@
 		6BF9B46120F889F6005317E7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6BF9B47220F8AB74005317E7 /* Food101Recognition */,
 				6BF9B46220F88A19005317E7 /* MenuViewController.swift */,
 			);
 			path = ViewControllers;
@@ -124,6 +126,7 @@
 		6BF9B46420F88E6D005317E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6BF9B47120F8AB59005317E7 /* Food101Recognition */,
 				6BF9B46520F88E91005317E7 /* MenuTableViewCell.swift */,
 				6BF9B46620F88E91005317E7 /* MenuTableViewCell.xib */,
 			);
@@ -144,6 +147,22 @@
 				6BF9B46D20F89724005317E7 /* MenuEntity.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		6BF9B47120F8AB59005317E7 /* Food101Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				6BF9B46F20F8A8DC005317E7 /* Food101RecognitionViewController.storyboard */,
+			);
+			path = Food101Recognition;
+			sourceTree = "<group>";
+		};
+		6BF9B47220F8AB74005317E7 /* Food101Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				6B30783E20CA574200D4F80C /* Food101RecognitionViewController.swift */,
+			);
+			path = Food101Recognition;
 			sourceTree = "<group>";
 		};
 		AAA6A7C720E9E8B100F47CB7 /* MLModels */ = {
@@ -238,6 +257,7 @@
 			files = (
 				6B30784720CA574300D4F80C /* LaunchScreen.storyboard in Resources */,
 				6B30784420CA574300D4F80C /* Assets.xcassets in Resources */,
+				6BF9B47020F8A8DC005317E7 /* Food101RecognitionViewController.storyboard in Resources */,
 				6BF9B46820F88E91005317E7 /* MenuTableViewCell.xib in Resources */,
 				6B30784220CA574200D4F80C /* Main.storyboard in Resources */,
 			);
