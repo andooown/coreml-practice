@@ -17,10 +17,30 @@
                     <view key="view" contentMode="scaleToFill" id="v3P-Sb-2uF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="luf-Ei-7ko">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="42n-Ov-H1x" id="bOV-MY-rWz"/>
+                                    <outlet property="delegate" destination="42n-Ov-H1x" id="R2i-ms-7ga"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3IG-CB-OWz" firstAttribute="bottom" secondItem="luf-Ei-7ko" secondAttribute="bottom" id="7b1-sQ-WI6"/>
+                            <constraint firstItem="3IG-CB-OWz" firstAttribute="trailing" secondItem="luf-Ei-7ko" secondAttribute="trailing" id="EUE-zQ-H1r"/>
+                            <constraint firstItem="luf-Ei-7ko" firstAttribute="top" secondItem="3IG-CB-OWz" secondAttribute="top" id="c9M-p8-G8u"/>
+                            <constraint firstItem="luf-Ei-7ko" firstAttribute="leading" secondItem="3IG-CB-OWz" secondAttribute="leading" id="lvl-Q6-9Wv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3IG-CB-OWz"/>
                     </view>
                     <navigationItem key="navigationItem" title="CoreML Practice" id="9Ia-58-j7E"/>
+                    <connections>
+                        <outlet property="menuTableView" destination="luf-Ei-7ko" id="VfW-sq-9Tk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTI-cs-cm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="-1410" y="1051"/>
         </scene>
-        <!--View Controller-->
+        <!--Food101 Recognition View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreMLPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Food101RecognitionViewController" id="BYZ-38-t0r" customClass="Food101RecognitionViewController" customModule="CoreMLPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

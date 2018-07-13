@@ -23,4 +23,8 @@ class MenuTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func setMenu(_ menu: MenuEntity) {
+        self.label.text = menu.title
+    }
+
 }
