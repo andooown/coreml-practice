@@ -21,6 +21,7 @@ class Food101RecognitionViewController: UIViewController, AVCaptureVideoDataOutp
 
     var mlModel: VNCoreMLModel!
     var request: VNCoreMLRequest!
+    var videoLayer: AVCaptureVideoPreviewLayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,10 +66,10 @@ class Food101RecognitionViewController: UIViewController, AVCaptureVideoDataOutp
         self.videoOutput.setSampleBufferDelegate(self, queue: queue)
         self.captureSession.addOutput(self.videoOutput)
 
-        let videoLayer: AVCaptureVideoPreviewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
-        videoLayer.frame = self.cameraView.bounds
-        videoLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        self.cameraView.layer.addSublayer(videoLayer)
+        self.videoLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
+        self.videoLayer.frame = self.cameraView.bounds
+        self.videoLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        self.cameraView.layer.addSublayer(self.videoLayer)
 
         for connection in self.videoOutput.connections {
             let conn = connection
@@ -79,6 +80,14 @@ class Food101RecognitionViewController: UIViewController, AVCaptureVideoDataOutp
 
         self.captureSession.startRunning()
     }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        self.videoLayer.frame = self.cameraView.bounds
+    }
+
+    // MARK: - AVCaptureVideoDataOutputSampleBufferDelegate
 
     func captureOutput(_ output: AVCaptureOutput,
                        didOutput sampleBuffer: CMSampleBuffer,
