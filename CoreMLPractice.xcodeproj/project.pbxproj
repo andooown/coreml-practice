@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		6B30783D20CA574200D4F80C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B30783C20CA574200D4F80C /* AppDelegate.swift */; };
-		6B30783F20CA574200D4F80C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B30783E20CA574200D4F80C /* ViewController.swift */; };
-		6B30784220CA574200D4F80C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784020CA574200D4F80C /* Main.storyboard */; };
+		6B30783F20CA574200D4F80C /* Food101RecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B30783E20CA574200D4F80C /* Food101RecognitionViewController.swift */; };
+		6B30784220CA574200D4F80C /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784020CA574200D4F80C /* MenuViewController.storyboard */; };
 		6B30784420CA574300D4F80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784320CA574300D4F80C /* Assets.xcassets */; };
 		6B30784720CA574300D4F80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784520CA574300D4F80C /* LaunchScreen.storyboard */; };
 		6B30785220CA574300D4F80C /* CoreMLPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B30785120CA574300D4F80C /* CoreMLPracticeTests.swift */; };
-		AAA6A7D120E9FD0200F47CB7 /* NASNetMobile.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = AAA6A7D020E9FD0200F47CB7 /* NASNetMobile.mlmodel */; };
+		6BF9B45F20F8872D005317E7 /* NASNetMobile.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9B45E20F8872D005317E7 /* NASNetMobile.mlmodel */; };
+		6BF9B46320F88A19005317E7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9B46220F88A19005317E7 /* MenuViewController.swift */; };
+		6BF9B46720F88E91005317E7 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9B46520F88E91005317E7 /* MenuTableViewCell.swift */; };
+		6BF9B46B20F89696005317E7 /* MenusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9B46A20F89696005317E7 /* MenusModel.swift */; };
+		6BF9B46E20F89724005317E7 /* MenuEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9B46D20F89724005317E7 /* MenuEntity.swift */; };
+		6BF9B47020F8A8DC005317E7 /* Food101RecognitionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BF9B46F20F8A8DC005317E7 /* Food101RecognitionViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,15 +34,20 @@
 /* Begin PBXFileReference section */
 		6B30783920CA574200D4F80C /* CoreMLPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B30783C20CA574200D4F80C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6B30783E20CA574200D4F80C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6B30784120CA574200D4F80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B30783E20CA574200D4F80C /* Food101RecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food101RecognitionViewController.swift; sourceTree = "<group>"; };
+		6B30784120CA574200D4F80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MenuViewController.storyboard; sourceTree = "<group>"; };
 		6B30784320CA574300D4F80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B30784620CA574300D4F80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B30784820CA574300D4F80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B30784D20CA574300D4F80C /* CoreMLPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreMLPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B30785120CA574300D4F80C /* CoreMLPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLPracticeTests.swift; sourceTree = "<group>"; };
 		6B30785320CA574300D4F80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAA6A7D020E9FD0200F47CB7 /* NASNetMobile.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NASNetMobile.mlmodel; sourceTree = "<group>"; };
+		6BF9B45E20F8872D005317E7 /* NASNetMobile.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NASNetMobile.mlmodel; sourceTree = "<group>"; };
+		6BF9B46220F88A19005317E7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6BF9B46520F88E91005317E7 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		6BF9B46A20F89696005317E7 /* MenusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusModel.swift; sourceTree = "<group>"; };
+		6BF9B46D20F89724005317E7 /* MenuEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEntity.swift; sourceTree = "<group>"; };
+		6BF9B46F20F8A8DC005317E7 /* Food101RecognitionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Food101RecognitionViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +89,12 @@
 		6B30783B20CA574200D4F80C /* CoreMLPractice */ = {
 			isa = PBXGroup;
 			children = (
+				6BF9B46C20F896CA005317E7 /* Entities */,
+				6BF9B46920F8952F005317E7 /* Models */,
+				6BF9B46420F88E6D005317E7 /* Views */,
+				6BF9B46120F889F6005317E7 /* ViewControllers */,
 				AAA6A7C720E9E8B100F47CB7 /* MLModels */,
 				6B30783C20CA574200D4F80C /* AppDelegate.swift */,
-				6B30783E20CA574200D4F80C /* ViewController.swift */,
-				6B30784020CA574200D4F80C /* Main.storyboard */,
 				6B30784320CA574300D4F80C /* Assets.xcassets */,
 				6B30784520CA574300D4F80C /* LaunchScreen.storyboard */,
 				6B30784820CA574300D4F80C /* Info.plist */,
@@ -99,10 +111,61 @@
 			path = CoreMLPracticeTests;
 			sourceTree = "<group>";
 		};
+		6BF9B46120F889F6005317E7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BF9B47220F8AB74005317E7 /* Food101Recognition */,
+				6BF9B46220F88A19005317E7 /* MenuViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6BF9B46420F88E6D005317E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BF9B47120F8AB59005317E7 /* Food101Recognition */,
+				6BF9B46520F88E91005317E7 /* MenuTableViewCell.swift */,
+				6B30784020CA574200D4F80C /* MenuViewController.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BF9B46920F8952F005317E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BF9B46A20F89696005317E7 /* MenusModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BF9B46C20F896CA005317E7 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6BF9B46D20F89724005317E7 /* MenuEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6BF9B47120F8AB59005317E7 /* Food101Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				6BF9B46F20F8A8DC005317E7 /* Food101RecognitionViewController.storyboard */,
+			);
+			path = Food101Recognition;
+			sourceTree = "<group>";
+		};
+		6BF9B47220F8AB74005317E7 /* Food101Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				6B30783E20CA574200D4F80C /* Food101RecognitionViewController.swift */,
+			);
+			path = Food101Recognition;
+			sourceTree = "<group>";
+		};
 		AAA6A7C720E9E8B100F47CB7 /* MLModels */ = {
 			isa = PBXGroup;
 			children = (
-				AAA6A7D020E9FD0200F47CB7 /* NASNetMobile.mlmodel */,
+				6BF9B45E20F8872D005317E7 /* NASNetMobile.mlmodel */,
 			);
 			path = MLModels;
 			sourceTree = "<group>";
@@ -191,7 +254,8 @@
 			files = (
 				6B30784720CA574300D4F80C /* LaunchScreen.storyboard in Resources */,
 				6B30784420CA574300D4F80C /* Assets.xcassets in Resources */,
-				6B30784220CA574200D4F80C /* Main.storyboard in Resources */,
+				6BF9B47020F8A8DC005317E7 /* Food101RecognitionViewController.storyboard in Resources */,
+				6B30784220CA574200D4F80C /* MenuViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B30783F20CA574200D4F80C /* ViewController.swift in Sources */,
-				AAA6A7D120E9FD0200F47CB7 /* NASNetMobile.mlmodel in Sources */,
+				6B30783F20CA574200D4F80C /* Food101RecognitionViewController.swift in Sources */,
+				6BF9B46E20F89724005317E7 /* MenuEntity.swift in Sources */,
+				6BF9B45F20F8872D005317E7 /* NASNetMobile.mlmodel in Sources */,
 				6B30783D20CA574200D4F80C /* AppDelegate.swift in Sources */,
+				6BF9B46320F88A19005317E7 /* MenuViewController.swift in Sources */,
+				6BF9B46B20F89696005317E7 /* MenusModel.swift in Sources */,
+				6BF9B46720F88E91005317E7 /* MenuTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,12 +318,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6B30784020CA574200D4F80C /* Main.storyboard */ = {
+		6B30784020CA574200D4F80C /* MenuViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6B30784120CA574200D4F80C /* Base */,
 			);
-			name = Main.storyboard;
+			name = MenuViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		6B30784520CA574300D4F80C /* LaunchScreen.storyboard */ = {

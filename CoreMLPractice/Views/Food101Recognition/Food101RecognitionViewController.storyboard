@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dg3-Sx-pRL">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Food101 Recognition View Controller-->
+        <scene sceneID="7v3-Wi-nww">
+            <objects>
+                <viewController storyboardIdentifier="Food101RecognitionViewController" id="dg3-Sx-pRL" customClass="Food101RecognitionViewController" customModule="CoreMLPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L98-MJ-V6S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaP-8X-FnP">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAN-0E-EI8">
+                                <rect key="frame" x="0.0" y="44" width="375" height="20.333333333333329"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cAN-0E-EI8" firstAttribute="trailing" secondItem="ngA-xx-3uS" secondAttribute="trailing" id="8Se-SS-khR"/>
+                            <constraint firstItem="xaP-8X-FnP" firstAttribute="trailing" secondItem="ngA-xx-3uS" secondAttribute="trailing" id="GR5-DB-Scq"/>
+                            <constraint firstItem="cAN-0E-EI8" firstAttribute="top" secondItem="ngA-xx-3uS" secondAttribute="top" id="J4x-lN-VHT"/>
+                            <constraint firstItem="xaP-8X-FnP" firstAttribute="bottom" secondItem="ngA-xx-3uS" secondAttribute="bottom" id="UPo-6e-D7x"/>
+                            <constraint firstItem="cAN-0E-EI8" firstAttribute="leading" secondItem="ngA-xx-3uS" secondAttribute="leading" id="pHj-9l-V9w"/>
+                            <constraint firstItem="xaP-8X-FnP" firstAttribute="leading" secondItem="ngA-xx-3uS" secondAttribute="leading" id="vma-Jh-Bew"/>
+                            <constraint firstItem="xaP-8X-FnP" firstAttribute="top" secondItem="ngA-xx-3uS" secondAttribute="top" id="xlO-4D-Z9j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ngA-xx-3uS"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="xaP-8X-FnP" id="Z9q-4j-g9t"/>
+                        <outlet property="resultLabel" destination="cAN-0E-EI8" id="Uo9-IN-qhS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUT-Gv-Muy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="221.67487684729065"/>
+        </scene>
+    </scenes>
+</document>

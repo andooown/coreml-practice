@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Vision
 
-class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+class Food101RecognitionViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var resultLabel: UILabel!
