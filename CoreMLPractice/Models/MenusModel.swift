@@ -14,6 +14,11 @@ struct MenusModel {
             title: "Food101 Recognition",
             description: "Realtime food recognition with CoreML. Using NASNetMobile.",
             className: "Food101RecognitionViewController"
+        ),
+        MenuEntity(
+            title: "Food101 Recognition with AR",
+            description: "Realtime food recognition with CoreML and showing results with ARKit. Using NASNetMobile.",
+            className: "Food101RecognitionWithARViewController"
         )
     ]
 }
