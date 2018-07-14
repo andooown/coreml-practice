@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6B30783D20CA574200D4F80C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B30783C20CA574200D4F80C /* AppDelegate.swift */; };
 		6B30783F20CA574200D4F80C /* Food101RecognitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B30783E20CA574200D4F80C /* Food101RecognitionViewController.swift */; };
-		6B30784220CA574200D4F80C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784020CA574200D4F80C /* Main.storyboard */; };
+		6B30784220CA574200D4F80C /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784020CA574200D4F80C /* MenuViewController.storyboard */; };
 		6B30784420CA574300D4F80C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784320CA574300D4F80C /* Assets.xcassets */; };
 		6B30784720CA574300D4F80C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B30784520CA574300D4F80C /* LaunchScreen.storyboard */; };
 		6B30785220CA574300D4F80C /* CoreMLPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B30785120CA574300D4F80C /* CoreMLPracticeTests.swift */; };
@@ -35,7 +35,7 @@
 		6B30783920CA574200D4F80C /* CoreMLPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B30783C20CA574200D4F80C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B30783E20CA574200D4F80C /* Food101RecognitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food101RecognitionViewController.swift; sourceTree = "<group>"; };
-		6B30784120CA574200D4F80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B30784120CA574200D4F80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MenuViewController.storyboard; sourceTree = "<group>"; };
 		6B30784320CA574300D4F80C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B30784620CA574300D4F80C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B30784820CA574300D4F80C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,7 +95,6 @@
 				6BF9B46120F889F6005317E7 /* ViewControllers */,
 				AAA6A7C720E9E8B100F47CB7 /* MLModels */,
 				6B30783C20CA574200D4F80C /* AppDelegate.swift */,
-				6B30784020CA574200D4F80C /* Main.storyboard */,
 				6B30784320CA574300D4F80C /* Assets.xcassets */,
 				6B30784520CA574300D4F80C /* LaunchScreen.storyboard */,
 				6B30784820CA574300D4F80C /* Info.plist */,
@@ -126,6 +125,7 @@
 			children = (
 				6BF9B47120F8AB59005317E7 /* Food101Recognition */,
 				6BF9B46520F88E91005317E7 /* MenuTableViewCell.swift */,
+				6B30784020CA574200D4F80C /* MenuViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 				6B30784720CA574300D4F80C /* LaunchScreen.storyboard in Resources */,
 				6B30784420CA574300D4F80C /* Assets.xcassets in Resources */,
 				6BF9B47020F8A8DC005317E7 /* Food101RecognitionViewController.storyboard in Resources */,
-				6B30784220CA574200D4F80C /* Main.storyboard in Resources */,
+				6B30784220CA574200D4F80C /* MenuViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,12 +318,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6B30784020CA574200D4F80C /* Main.storyboard */ = {
+		6B30784020CA574200D4F80C /* MenuViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6B30784120CA574200D4F80C /* Base */,
 			);
-			name = Main.storyboard;
+			name = MenuViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		6B30784520CA574300D4F80C /* LaunchScreen.storyboard */ = {
