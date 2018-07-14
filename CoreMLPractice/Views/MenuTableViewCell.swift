@@ -10,7 +10,8 @@ import UIKit
 
 class MenuTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,7 +25,8 @@ class MenuTableViewCell: UITableViewCell {
     }
 
     func setMenu(_ menu: MenuEntity) {
-        self.label.text = menu.title
+        self.titleLabel.text = menu.title
+        self.descriptionLabel.text = menu.description
     }
 
 }

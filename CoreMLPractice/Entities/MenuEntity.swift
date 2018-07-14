@@ -11,6 +11,7 @@ import Foundation
 
 struct MenuEntity {
     let title: String
+    let description: String
     let className: String
 
     func viewController() -> UIViewController {

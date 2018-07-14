@@ -17,8 +17,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.menuTableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil),
-                                    forCellReuseIdentifier: "MenuTableViewCellIdentifier")
         self.menuTableView.tableFooterView = UIView()
     }
 

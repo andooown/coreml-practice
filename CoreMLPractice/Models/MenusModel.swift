@@ -12,6 +12,7 @@ struct MenusModel {
     let menus = [
         MenuEntity(
             title: "Food101 Recognition",
+            description: "Realtime food recognition with CoreML. Using NASNetMobile.",
             className: "Food101RecognitionViewController"
         )
     ]
