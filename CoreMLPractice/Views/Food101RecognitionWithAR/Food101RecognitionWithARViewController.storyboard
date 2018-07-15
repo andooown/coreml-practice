@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3r0-iI-AKu">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,28 @@
             <objects>
                 <viewController storyboardIdentifier="Food101RecognitionWithARViewController" id="3r0-iI-AKu" customClass="Food101RecognitionWithARViewController" customModule="CoreMLPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lAi-2u-diz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qJ-WI-KXa">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <connections>
+                                    <outlet property="delegate" destination="3r0-iI-AKu" id="jIF-kq-BWn"/>
+                                </connections>
+                            </arscnView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4qJ-WI-KXa" firstAttribute="leading" secondItem="Jbd-hk-iLq" secondAttribute="leading" id="4RE-eS-Odm"/>
+                            <constraint firstItem="4qJ-WI-KXa" firstAttribute="bottom" secondItem="lAi-2u-diz" secondAttribute="bottom" id="9jU-EX-20I"/>
+                            <constraint firstItem="Jbd-hk-iLq" firstAttribute="trailing" secondItem="4qJ-WI-KXa" secondAttribute="trailing" id="fh8-Mq-7ID"/>
+                            <constraint firstItem="4qJ-WI-KXa" firstAttribute="top" secondItem="Jbd-hk-iLq" secondAttribute="top" id="jGl-1N-Ihw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jbd-hk-iLq"/>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="4qJ-WI-KXa" id="b9d-00-unq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YqF-fJ-DTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
